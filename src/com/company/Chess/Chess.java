@@ -10,7 +10,7 @@ public class Chess {
 
     public String hallo() {
 
-        return "Hallo " + name;
+        return "Hallo " + name + ", gehts da e guat?";
     }
 
 }
