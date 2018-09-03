@@ -16,7 +16,7 @@ public class MyTestController {
     @RequestMapping(value = "/chess", method = RequestMethod.PUT)
     public String chessPut(@RequestParam("old-x") int oldXPosition, @RequestParam("old-y") int oldYPosition,
                            @RequestParam("new-x") int newXPosition, @RequestParam("new-y") int newYPosition) {
-        return MessageFormat.format("Old: {0}, {1} - New: {2}, {3}", oldXPosition, oldYPosition, newXPosition, newYPosition);
+        return MessageFormat.format("PUT: Old: {0}, {1} - New: {2}, {3}", oldXPosition, oldYPosition, newXPosition, newYPosition);
     }
 
     @RequestMapping(value = "/chess", method = RequestMethod.GET)
